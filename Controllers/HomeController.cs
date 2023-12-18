@@ -16,6 +16,8 @@ namespace Hangfire_task14_13_12_23.Controllers
 
         public IActionResult Index()
         {
+            //branchb
+            Console.WriteLine("branchb");
             return View();
         }
 
@@ -23,6 +25,8 @@ namespace Hangfire_task14_13_12_23.Controllers
         public IActionResult EnqueueWelcome()
         {
             RecurringJob.AddOrUpdate(() => Console.WriteLine("Hi Divya"),Cron.Minutely());
+            //brancha
+            Console.WriteLine("BranchA");
             return RedirectToAction("Index");
         }
 

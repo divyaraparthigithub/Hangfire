@@ -1,1 +1,5 @@
+HEAD
 "Content in BranchA" 
+
+"Content in BranchB" 
+ BranchB
